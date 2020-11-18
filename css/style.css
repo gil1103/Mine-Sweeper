@@ -1,0 +1,81 @@
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.box-cont {
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    position: relative;
+}
+
+.board {
+    /* background-color: rgb(219, 39, 39); */
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    margin:0 auto;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    transition: .5s;
+}
+
+/* td:hover {
+    background-color: lightsalmon;
+} */
+
+.btn-cont {
+    height: 50px;
+    width: 320px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+.level {
+    border-radius: 0.12em;
+    transition: all 0.2s;
+    border: 0;
+    width: 80px;
+    height: 50px;
+    background-color: rgb(242, 223, 117);
+    padding: 5px;
+    font-size: larger;
+    margin-bottom: 2px;
+    color: black;
+}
+
+.timer {
+    border-radius: 0.12em;
+    transition: all 0.2s;
+    border: 0;
+    width: 120pxpx;
+    height: 50px;
+    color: black;
+    background-color: rgb(242, 223, 117);
+    padding: 5px;
+    font-size: larger;
+    text-align: center;
+}
+/* .blank {
+    width:40px; 
+    height:40px;
+    text-align: center
+}
+
+.mine {
+    width:25px; 
+    height:auto
+} */

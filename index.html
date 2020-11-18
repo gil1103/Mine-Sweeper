@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mine Sweeper</title>
+</head>
+
+<body onload="initGame()">
+    <h1>Mine Sweeper</h1>
+    <!-- <div class="box-cont"></div> -->
+        <table class="board">
+            <tbody  ></tbody>
+        </table>
+
+        <div class="btn-cont">
+            <button class="level" onclick="setLevel(4)">Beginner</button>
+            <button class="level" onclick="setLevel(8)">Medium</button>
+            <button class="level" onclick="setLevel(12)">Expert</button>
+            <button class="level" onclick="restartGame()">Restart</button>
+            <div class="timer">Timer</div>
+        </div>
+    <!-- </div> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
