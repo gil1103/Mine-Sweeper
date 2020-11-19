@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Mine Sweeper</title>
-    <script>
-        document.addEventListener('contextmenu', event => event.preventDefault());
+    <script>     //disable right mouse context menu
+        document.addEventListener('contextmenu', event => event.preventDefault()); 
     </script>
 </head>
 
-<body onload="initGame()" onmousedown="mouseDown(event)">
+<body onload="initGame()">
     <h1>Mine Sweeper</h1>
     <div class="board">
         <table>
@@ -22,7 +22,7 @@
         <button class="level" onclick="setLevel(4)">Beginner</button>
         <button class="level" onclick="setLevel(8)">Medium</button>
         <button class="level" onclick="setLevel(12)">Expert</button>
-        <button class="level" onclick="restartGame()">Restart</button>
+        <button class="level" onclick="initGame()">Restart</button>
         <div class="timer">Timer</div>
     </div>
 
