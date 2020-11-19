@@ -5,23 +5,27 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Mine Sweeper</title>
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
 </head>
 
-<body onload="initGame()">
+<body onload="initGame()" onmousedown="mouseDown(event)">
     <h1>Mine Sweeper</h1>
-    <!-- <div class="box-cont"></div> -->
-        <table class="board">
-            <tbody  ></tbody>
+    <div class="board">
+        <table>
+            <tbody></tbody>
         </table>
+    </div>
 
-        <div class="btn-cont">
-            <button class="level" onclick="setLevel(4)">Beginner</button>
-            <button class="level" onclick="setLevel(8)">Medium</button>
-            <button class="level" onclick="setLevel(12)">Expert</button>
-            <button class="level" onclick="restartGame()">Restart</button>
-            <div class="timer">Timer</div>
-        </div>
-    <!-- </div> -->
+    <div class="btn-cont">
+        <button class="level" onclick="setLevel(4)">Beginner</button>
+        <button class="level" onclick="setLevel(8)">Medium</button>
+        <button class="level" onclick="setLevel(12)">Expert</button>
+        <button class="level" onclick="restartGame()">Restart</button>
+        <div class="timer">Timer</div>
+    </div>
+
     <script src="js/main.js"></script>
 </body>
 
