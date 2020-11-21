@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Mine Sweeper</title>
-    <script>     //disable right mouse context menu
+    <!-- <script>     //disable right mouse context menu
         document.addEventListener('contextmenu', event => event.preventDefault()); 
-    </script>
+    </script> -->
 </head>
 
 <body onload="initGame()">
-    <h1>Mine Sweeper</h1>
+    <div class="header">
+        <h1>Mine Sweeper</h1>
+        <div class="timer">Timer</div>
+            <span class="lives">2 LIVES LEFT</span>
+            <span class="Smiley" onclick="initGame()"></span>
+    </div>
+
     <div class="board">
         <table>
             <tbody></tbody>
@@ -22,8 +28,8 @@
         <button class="level" onclick="setLevel(4)">Beginner</button>
         <button class="level" onclick="setLevel(8)">Medium</button>
         <button class="level" onclick="setLevel(12)">Expert</button>
-        <button class="level" onclick="initGame()">Restart</button>
-        <div class="timer">Timer</div>
+        <!-- <button class="level" onclick="initGame()">Restart</button> -->
+
     </div>
 
     <script src="js/main.js"></script>

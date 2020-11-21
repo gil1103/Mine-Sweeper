@@ -1,5 +1,5 @@
 body {
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/background_2.JPG');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -27,7 +27,7 @@ h1 {
 }
 
 .board .inner {
-    background-color:#666;
+    background-color:rgb(20, 4, 4);
     margin: auto; 
 }
 
@@ -53,11 +53,11 @@ h1 {
 
 .board table td {
     text-align: center;
-    background-color: #AAA;
+    background-color: #3d0523;
     font-size:30px;
 }
 
-.board table td .cell   {
+.board table td .cell {
     width: 45px;
     height: 45px;
     padding:0;
@@ -65,23 +65,23 @@ h1 {
 }
 
 .btn-cont {
-    height: 50px;
+    height: 104px;
     width: 320px;
     margin: auto;
     position: relative;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .level {
-    border-radius: 0.12em;
+    border-radius: 10px;
     transition: all 0.2s;
     border: 0;
-    width: 80px;
+    width: 100px;
     height: 50px;
-    background-color: rgb(242, 223, 117);
+    background-color: rgb(155 140 25 / 1);
     padding: 5px;
     font-size: larger;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     color: black;
 }
 
@@ -89,11 +89,42 @@ h1 {
     border-radius: 0.12em;
     transition: all 0.2s;
     border: 0;
-    width: 120pxpx;
+    width: 120px;
     height: 50px;
     color: black;
-    background-color: rgb(242, 223, 117);
+    background-color: rgb(155 140 25 / 1);
     padding: 5px;
     font-size: larger;
     text-align: center;
+    display: block;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.lives{
+    color: black;
+    background-color: rgb(50 50 84);
+    text-align: center;
+    width: 140px;
+    height: 50px;
+    margin: auto; 
+    border-radius: 10px;
+    position: absolute;
+    left: 10px;
+}
+
+.Smiley{
+    color: black;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    margin: auto; 
+    border-radius: 10px;
+    position: absolute;
+    right: 100px;
+    font-size:30px;
 }
